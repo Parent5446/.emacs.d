@@ -1,4 +1,3 @@
-(prelude-require-packages
- '(helm-bibtex
-   hyde
-   ))
+(prelude-require-package 'helm-bibtex)
+(prelude-require-package 'hyde)
+(require 'hyde)

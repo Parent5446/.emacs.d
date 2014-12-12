@@ -3,13 +3,19 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(LaTeX-command-style
+   (quote
+    (("" "%(PDF)%(latex) %(extraopts) -file-line-error %S%(PDFout)"))))
+ '(TeX-command-BibTeX "Biber")
  '(backup-by-copying t)
  '(delete-old-versions t)
+ '(doc-view-continuous t)
  '(file-precious-flag t)
  '(kept-new-versions 6)
  '(kept-old-versions 2)
  '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
+ '(tex-bibtex-command "biber")
  '(version-control t)
  '(whitespace-line-column 120)
  '(whitespace-style
