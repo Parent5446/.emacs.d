@@ -24,6 +24,6 @@
     (message "Updating Prelude...")
     (cd prelude-dir)
     (shell-command "git fetch upstream")
-    (shell-command "git merge --ff-only upstream/master")
+    (shell-command "git merge upstream/master")
     (prelude-recompile-init)
     (message "Update finished. Restart Emacs to complete the process.")))
