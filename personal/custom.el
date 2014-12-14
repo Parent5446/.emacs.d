@@ -11,10 +11,17 @@
  '(delete-old-versions t)
  '(doc-view-continuous t)
  '(file-precious-flag t)
+ '(global-linum-mode t)
  '(kept-new-versions 6)
  '(kept-old-versions 2)
+ '(linum-relative-current-symbol "")
  '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
+ '(mode-line-format
+   (quote
+    ("%e" mode-line-position mode-line-client mode-line-modified mode-line-buffer-identification smartrep-mode-line-string
+     (vc-mode vc-mode)
+     mode-line-modes)))
  '(tex-bibtex-command "biber")
  '(version-control t)
  '(whitespace-line-column 120)
