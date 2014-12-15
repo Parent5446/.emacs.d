@@ -1,5 +1,10 @@
 (prelude-require-package 'helm-bibtex)
 (prelude-require-package 'hyde)
 (prelude-require-package 'linum-relative)
+(prelude-require-package 'magit-gh-pulls)
+(prelude-require-package 'magit-gerrit)
+
 (require 'hyde)
 (require 'linum-relative)
+(require 'magit-gh-pulls)
+(require 'magit-gerrit)
