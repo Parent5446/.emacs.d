@@ -12,22 +12,28 @@
  '(doc-view-continuous t)
  '(file-precious-flag t)
  '(global-linum-mode t)
+ '(indent-tabs-mode t)
  '(kept-new-versions 6)
  '(kept-old-versions 2)
  '(linum-relative-current-symbol "")
  '(mac-command-modifier (quote super))
+ '(mac-emulate-three-button-mouse t)
  '(mac-option-modifier (quote meta))
+ '(mac-system-move-file-to-trash-use-finder t)
+ '(message-send-mail-function (quote smtpmail-send-it))
  '(mode-line-format
    (quote
     ("%e" mode-line-position mode-line-client mode-line-modified mode-line-buffer-identification smartrep-mode-line-string
      (vc-mode vc-mode)
      mode-line-modes)))
+ '(prelude-clean-whitespace-on-save nil)
+ '(send-mail-function (quote sendmail-query-once))
  '(tex-bibtex-command "biber")
+ '(user-full-name "Tyler Romeo")
+ '(user-mail-address "tylerromeo@gmail.com")
  '(version-control t)
  '(whitespace-line-column 120)
- '(whitespace-style
-   (quote
-    (face empty trailing lines-tail space-before-tab space-after-tab))))
+ '(whitespace-style (quote (face empty trailing lines-tail))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

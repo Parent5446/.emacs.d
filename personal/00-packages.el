@@ -3,8 +3,12 @@
 (prelude-require-package 'linum-relative)
 (prelude-require-package 'magit-gh-pulls)
 (prelude-require-package 'magit-gerrit)
+(prelude-require-package 'multiple-cursors)
+(prelude-require-package 'mc-extras)
 
 (require 'hyde)
 (require 'linum-relative)
 (require 'magit-gh-pulls)
 (require 'magit-gerrit)
+(require 'multiple-cursors)
+(require 'mc-extras)

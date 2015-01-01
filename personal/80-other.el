@@ -12,6 +12,16 @@
 
 (linum-on)
 
+(global-set-key (kbd "M-s-%") 'replace-string)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(add-hook 'web-mode-hook '(lambda ()
+                            (local-set-key (kbd "C-c C-r") 'mc/mark-sgml-tag-pair)
+                            (local-set-key (kbd "C-c DEL") sgml-delete-tag)
+                            (local-set-key (kbd "C-c C-e") sgml-close-tag)))
+
 (defun prelude-update ()
   "Update Prelude to its latest version."
   (interactive)
