@@ -1,6 +1,14 @@
 (setq guru-warn-only nil)
 
 (define-key mac-apple-event-map [core-event reopen-application] nil)
+(defadvice handle-delete-frame (around my-handle-delete-frame-advice activate)
+  "Hide Emacs instead of closing the last frame"
+  (let ((frame   (posn-window (event-start event)))
+	(numfrs  (length (frame-list))))
+    (if (> numfrs 1)
+	ad-do-it
+      (do-applescript "tell application \"System Events\" to tell process \"Emacs\" to set visible to false"))))
+
 
 (setq hyde-home "/home/parent5446/Documents/parent5446-blog")
 (setq insert-directory-program "/usr/local/Cellar/coreutils/8.23_1/bin/gls")

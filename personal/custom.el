@@ -8,6 +8,7 @@
     (("" "%(PDF)%(latex) %(extraopts) -file-line-error %S%(PDFout)"))))
  '(TeX-command-BibTeX "Biber")
  '(backup-by-copying t)
+ '(backward-delete-char-untabify-method (quote hungry))
  '(delete-old-versions t)
  '(doc-view-continuous t)
  '(file-precious-flag t)
@@ -26,7 +27,10 @@
     ("%e" mode-line-position mode-line-client mode-line-modified mode-line-buffer-identification smartrep-mode-line-string
      (vc-mode vc-mode)
      mode-line-modes)))
+ '(osx-clipboard-mode t)
+ '(osx-pseudo-daemon-mode t)
  '(prelude-clean-whitespace-on-save nil)
+ '(save-interprogram-paste-before-kill t)
  '(send-mail-function (quote sendmail-query-once))
  '(tex-bibtex-command "biber")
  '(user-full-name "Tyler Romeo")

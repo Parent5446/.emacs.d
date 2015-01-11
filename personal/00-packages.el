@@ -5,6 +5,8 @@
 (prelude-require-package 'magit-gerrit)
 (prelude-require-package 'multiple-cursors)
 (prelude-require-package 'mc-extras)
+(prelude-require-package 'osx-clipboard)
+(prelude-require-package 'osx-pseudo-daemon)
 
 (require 'hyde)
 (require 'linum-relative)
