@@ -1,3 +1,4 @@
+(prelude-require-package 'apache-mode)
 (prelude-require-package 'helm-bibtex)
 (prelude-require-package 'hyde)
 (prelude-require-package 'linum-relative)
