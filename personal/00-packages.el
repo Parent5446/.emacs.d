@@ -1,3 +1,6 @@
+(prelude-require-package 'anything)
+(prelude-require-package 'anything-git-files)
+(prelude-require-package 'anything-git-grep)
 (prelude-require-package 'apache-mode)
 (prelude-require-package 'helm-bibtex)
 (prelude-require-package 'hyde)
