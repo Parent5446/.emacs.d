@@ -32,6 +32,11 @@
  '(prelude-clean-whitespace-on-save nil)
  '(save-interprogram-paste-before-kill t)
  '(send-mail-function (quote sendmail-query-once))
+ '(symon-delay 1)
+ '(symon-mode t)
+ '(symon-monitors
+   (quote
+    (symon-darwin-memory-monitor symon-darwin-cpu-monitor symon-darwin-battery-monitor symon-current-time-monitor)))
  '(tex-bibtex-command "biber")
  '(user-full-name "Tyler Romeo")
  '(user-mail-address "tylerromeo@gmail.com")
@@ -43,4 +48,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "#3F3F3F" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "SourceCodePro+Powerline+Awesome Regular")))))
