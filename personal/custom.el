@@ -30,6 +30,12 @@
  '(osx-clipboard-mode t)
  '(osx-pseudo-daemon-mode t)
  '(prelude-clean-whitespace-on-save nil)
+ '(safe-local-variable-values
+   (quote
+    ((css-indent-offset . 4)
+     (js2-strict-inconsistent-return-warning)
+     (js2-indent-switch-body . t)
+     (php-mode-coding-style quote symfony2))))
  '(save-interprogram-paste-before-kill t)
  '(send-mail-function (quote sendmail-query-once))
  '(symon-delay 1)
