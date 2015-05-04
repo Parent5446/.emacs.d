@@ -12,6 +12,8 @@
  '(delete-old-versions t)
  '(doc-view-continuous t)
  '(file-precious-flag t)
+ '(flycheck-disabled-checkers (quote (php-phpmd)))
+ '(flycheck-phpmd-rulesets nil)
  '(global-linum-mode t)
  '(indent-tabs-mode t)
  '(kept-new-versions 6)
@@ -32,7 +34,12 @@
  '(prelude-clean-whitespace-on-save nil)
  '(safe-local-variable-values
    (quote
-    ((css-indent-offset . 4)
+    ((web-mode-indent-style . 2)
+     (web-mode-attr-indent-offset)
+     (web-mode-block-padding . 4)
+     (web-mode-css-indent-offset . 2)
+     (web-mode-markup-indent-offset . 2)
+     (css-indent-offset . 4)
      (js2-strict-inconsistent-return-warning)
      (js2-indent-switch-body . t)
      (php-mode-coding-style quote symfony2))))

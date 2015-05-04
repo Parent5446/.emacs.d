@@ -42,3 +42,5 @@
     (shell-command "git merge upstream/master -m \"Updating prelude\"")
     (prelude-recompile-init)
     (message "Update finished. Restart Emacs to complete the process.")))
+
+(setq magit-last-seen-setup-instructions "1.4.0")
