@@ -1,17 +1,6 @@
 (setq guru-warn-only nil)
 
-(define-key mac-apple-event-map [core-event reopen-application] nil)
-(defadvice handle-delete-frame (around my-handle-delete-frame-advice activate)
-  "Hide Emacs instead of closing the last frame"
-  (let ((frame   (posn-window (event-start event)))
-	(numfrs  (length (frame-list))))
-    (if (> numfrs 1)
-	ad-do-it
-      (do-applescript "tell application \"System Events\" to tell process \"Emacs\" to set visible to false"))))
-
-
 (setq hyde-home "/home/parent5446/Documents/parent5446-blog")
-(setq insert-directory-program "/usr/local/Cellar/coreutils/8.23_1/bin/gls")
 
 (eval-after-load "flyspell"
   '(progn
@@ -24,11 +13,11 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-
-(add-hook 'web-mode-hook '(lambda ()
-                            (local-set-key (kbd "C-c C-r") 'mc/mark-sgml-tag-pair)
-                            (local-set-key (kbd "C-c DEL") sgml-delete-tag)
-                            (local-set-key (kbd "C-c C-e") sgml-close-tag)))
+(global-set-key (kbd "C-c z l") 'google-lint)
+(global-set-key (kbd "C-c z g") 'autogen)
+(global-set-key (kbd "C-c z c") 'google3-build)
+(global-set-key (kbd "C-c z t") 'google3-test)
+(global-set-key (kbd "C-x p c") 'p4-change)
 
 (defun prelude-update ()
   "Update Prelude to its latest version."

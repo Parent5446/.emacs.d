@@ -3,3 +3,19 @@
 
 (add-hook 'help-mode-hook 'page-break-lines-mode)
 (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
+(add-hook 'web-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "C-c C-r") 'mc/mark-sgml-tag-pair)
+             (local-set-key (kbd "C-c DEL") sgml-delete-tag)
+             (local-set-key (kbd "C-c C-e") sgml-close-tag)))
+(add-hook 'find-file-not-found-functions 'google-autogen-file-not-found-hook)
+(add-hook 'typescript-mode-hook
+          '(lambda ()
+             (tide-setup)
+             (flycheck-mode +1)
+             (eldoc-mode +1)
+             (company-mode +1)))
+(add-hook 'before-save-hook 'tide-format-before-save)
+(add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
