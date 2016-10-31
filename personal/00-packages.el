@@ -50,10 +50,13 @@
 (setq google-update-load-path 'allowed-google-load-path-additions)
 
 (require 'google)
+(require 'google-cc-extras)
 (require 'googlemenu)
 (require 'p4-google)
 (require 'p4-files)
 (require 'google3)
 (require 'google3-build)
+(require 'google-imports)
 (require 'csearch)
+(require 'csearch-ui)
 (require 'magit2-git5)
