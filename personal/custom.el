@@ -25,6 +25,7 @@
  '(mac-command-modifier (quote super))
  '(mac-emulate-three-button-mouse t)
  '(mac-option-modifier (quote meta))
+ '(mac-pseudo-daemon-mode t)
  '(mac-system-move-file-to-trash-use-finder t)
  '(message-send-mail-function (quote smtpmail-send-it))
  '(mode-line-format
@@ -37,7 +38,7 @@
  '(osx-pseudo-daemon-mode t)
  '(package-selected-packages
    (quote
-    (ac-php-core anaconda-mode avy company dash f flycheck gh git-commit go-mode helm helm-core magit magit-popup multiple-cursors pcache php-mode projectile typescript-mode with-editor yasnippet js2-refactor tide page-break-line page-break-lines company-php company-go company-c-headers zop-to-char zenburn-theme yaml-mode web-mode volatile-highlights undo-tree symon smex smartrep smartparens rainbow-mode rainbow-delimiters ov osx-pseudo-daemon osx-clipboard operate-on-number move-text mediawiki mc-extras magit-p4 magit-gh-pulls magit-gerrit linum-relative key-chord json-mode js2-mode ido-ubiquitous hyde helm-projectile helm-mt helm-descbinds helm-bibtex helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flx-ido expand-region elisp-slime-nav easy-kill discover-my-major diminish diff-hl company-auctex company-anaconda cdlatex browse-kill-ring bind-key apache-mode anzu anything-git-grep anything-git-files ace-window ace-jump-mode ace-jump-buffer)))
+    (anything async auctex biblio biblio-core ht ido-completing-read+ marshal parsebib s lsp-java lsp-mode scss-mode feature-mode csv-mode ac-php-core anaconda-mode avy company dash f flycheck gh git-commit go-mode helm helm-core magit magit-popup multiple-cursors pcache php-mode projectile typescript-mode with-editor yasnippet js2-refactor tide page-break-line page-break-lines company-php company-go company-c-headers zop-to-char zenburn-theme yaml-mode web-mode volatile-highlights undo-tree symon smex smartrep smartparens rainbow-mode rainbow-delimiters ov osx-pseudo-daemon osx-clipboard operate-on-number move-text mediawiki mc-extras magit-p4 magit-gh-pulls magit-gerrit linum-relative key-chord json-mode js2-mode ido-ubiquitous hyde helm-projectile helm-mt helm-descbinds helm-bibtex helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flx-ido expand-region elisp-slime-nav easy-kill discover-my-major diminish diff-hl company-auctex company-anaconda cdlatex browse-kill-ring bind-key apache-mode anzu anything-git-grep anything-git-files ace-window ace-jump-mode ace-jump-buffer)))
  '(prelude-clean-whitespace-on-save nil)
  '(safe-local-variable-values
    (quote
@@ -57,6 +58,7 @@
  '(symon-monitors
    (quote
     (symon-darwin-memory-monitor symon-darwin-cpu-monitor symon-darwin-battery-monitor symon-current-time-monitor)))
+ '(tab-width 4)
  '(tex-bibtex-command "biber")
  '(typescript-expr-indent-offset 4)
  '(typescript-indent-level 2)

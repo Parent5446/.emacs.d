@@ -11,6 +11,8 @@
 (prelude-require-package 'helm-mt)
 (prelude-require-package 'hyde)
 (prelude-require-package 'linum-relative)
+(prelude-require-package 'lsp-mode)
+(prelude-require-package 'lsp-java)
 (prelude-require-package 'magit-gerrit)
 (prelude-require-package 'multiple-cursors)
 (prelude-require-package 'multi-term)
