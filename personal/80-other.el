@@ -1,6 +1,5 @@
 (setq guru-warn-only nil)
 
-(setq hyde-home "/home/parent5446/Documents/parent5446-blog")
 (set-variable 'typescript-indent-level 2)
 (set-variable 'tide-tsserver-directory
               (concat "/google/src/head/depot/google3"
@@ -23,11 +22,17 @@
 (global-set-key (kbd "C-c z c") 'google3-build)
 (global-set-key (kbd "C-c z t") 'google3-test)
 (global-set-key (kbd "C-c z s") 'csearch-ui)
-(global-set-key (kbd "C-c z j") 'google-imports-jade)
 (global-set-key (kbd "C-c p c") 'p4-change)
 (global-set-key (kbd "<f6>") 'cs)
+(global-set-key (kbd "C-c h") #'google-lsp-describe-thing-at-point)
+(global-set-key (kbd "C-c z r") #'google-rotate-among-files)
+(google-cc-extras/bind-default-keys)
 
-(grok-init)
+(company-ycmd-setup)
+(flycheck-ycmd-setup)
+(google-lsp-init)
+(p4-enable-file-name-handler)
+(p4-enable-ffap-support)
 
 (defun citc-client-from-path (path)
   (let ((components (split-string path "/")))

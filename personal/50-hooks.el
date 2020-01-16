@@ -1,8 +1,8 @@
 (add-to-list 'auto-mode-alist '("\\.xsd\\'" . xml-mode))
 (add-to-list 'auto-mode-alist '("\\.xslt\\'" . xml-mode))
 
+(add-hook 'after-init-hook #'global-ycmd-mode)
 (add-hook 'help-mode-hook 'page-break-lines-mode)
-(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
 (add-hook 'web-mode-hook
           '(lambda ()
              (local-set-key (kbd "C-c C-r") 'mc/mark-sgml-tag-pair)
@@ -19,12 +19,6 @@
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
-
-(require 'filenotify)
-(require 'flycheck)
-(require 'simple)
-(require 'tide)
-
 
 (let* ((restart-requested (make-hash-table :test 'equal))
        (restart-timers (make-hash-table :test 'equal))
@@ -64,6 +58,3 @@
            '(lambda (event)
               (watch-tsconfig tsconfig-file)
               (puthash (tide-project-name) t restart-requested))))))))
-
-
-; '(lambda () )
