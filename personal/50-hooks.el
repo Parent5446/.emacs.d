@@ -1,7 +1,8 @@
 (add-to-list 'auto-mode-alist '("\\.xsd\\'" . xml-mode))
 (add-to-list 'auto-mode-alist '("\\.xslt\\'" . xml-mode))
+(add-to-list 'company-backends #'company-capf)
 
-(add-hook 'after-init-hook #'global-ycmd-mode)
+(add-hook 'after-init-hook #'global-company-mode)
 (add-hook 'help-mode-hook 'page-break-lines-mode)
 (add-hook 'web-mode-hook
           '(lambda ()
@@ -19,6 +20,7 @@
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'google3-build-mode-hook #'ac-capf-setup)
 
 (let* ((restart-requested (make-hash-table :test 'equal))
        (restart-timers (make-hash-table :test 'equal))
